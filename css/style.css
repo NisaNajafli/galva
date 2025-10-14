@@ -1,0 +1,566 @@
+
+:root {
+  --default: #16113B;
+  --white: #fff;
+  --black: #000;
+  --color-1: #16113B;
+  --bg-4: #16113B;
+  --bg-5: #d7d7d7;
+  --color-2: #404a3d;
+  --color-3: #666;
+  --color-4: #404a3d;
+  --bg-2: #404a3d;
+  --bg-3: #eddd5e;
+  --bg-1: #f8f7f0;
+  --bg-6: #404a3d;
+  --border-2: #404a3d;
+  --border-3: #16113B;
+  --border-4: rgba(255, 255, 255, 0.377);
+  --border-1: rgba(64, 74, 61, 0.2);
+  --border-5: #ddd;
+  --box-shadow-1:rgb(255 250 250 / 30%);
+}
+#mobile_navbar.active_navbar {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+dl, ol, ul{
+    margin-bottom: 0;
+}
+ol, ul{
+    padding: 0 !important;
+}
+.all_sidebar {
+    display: block
+}
+
+#mobile_navbar {
+    transition: .3s ease-in-out
+}
+
+.mobile_list .mobile_nav_item {
+    width: 100%
+}
+
+#mobile_navbar {
+    max-width: 400px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fcfcfc;
+    z-index: 999;
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%)
+}
+
+#mobile_navbar::-webkit-scrollbar {
+    width: 5px
+}
+
+#mobile_navbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,.3)
+}
+
+#mobile_navbar::-webkit-scrollbar-thumb {
+    width: 3px;
+    height: auto;
+    background-color: #ddd;
+    border-radius: 4px
+}
+
+#mobile_navbar .cancel_logo_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1ebeb
+}
+
+.cancel_logo_mobile .logo_mobile {
+    margin: 0;
+    width: auto;
+    height: 60px
+}
+
+.cancel_logo_mobile .logo_mobile a {
+    width: 100%;
+    height: 100%;
+    display: inline-block
+}
+
+.cancel_logo_mobile .logo_mobile a img {
+    width: 100%;
+    height: 100%
+}
+
+.cancel_logo_mobile .cancel_button {
+    width: 25px;
+    height: 25px
+}
+
+.cancel_logo_mobile .cancel_button #cancel {
+    border: none;
+    cursor: pointer;
+    background-color: transparent
+}
+
+.cancel_logo_mobile .cancel_button svg {
+    width: 100%;
+    height: 100%;
+    fill: #221f1f;
+    opacity: .8
+}
+
+.mobile_list .mobile_nav_item .mobile_nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 700;
+    padding: 10px 0;
+    color: #000;
+    border-bottom: 1px solid #f1ebeb
+}
+
+.mobile_nav_item .mobile_nav_submenu {
+    padding-left: 20px;
+    display: none
+}
+
+.mobile_nav_submenu li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: #000;
+    font-weight: 700;
+    opacity: .8;
+    border-bottom: 1px solid #ddd
+}
+
+.mobile_nav_item:last-child {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.mobile_getQuete {
+    display: flex;
+    overflow: hidden;
+    padding: 1rem 2.5rem;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background: 0 0;
+    color: #fff;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: center
+}
+
+.mobile_getQuete:hover {
+    cursor: pointer
+}
+
+.mobile_getQuete>span {
+    position: relative;
+    z-index: 3
+}
+
+.mobile_getQuete::after,.mobile_getQuete::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    opacity: 0;
+    opacity: 1
+}
+
+.mobile_getQuete::before {
+    background: repeating-linear-gradient(50deg,transparent,transparent 10px,#1d1d1d56 10px,#575555 20px) #1d1d1d;
+    animation: .6s linear infinite loading_49100
+}
+
+.mobile_getQuete::after {
+    z-index: 2;
+    background: linear-gradient(#1d1d1d 30%,transparent 100%)
+}
+
+@keyframes loading_49100 {
+    0% {
+        translate: 25px 0
+    }
+
+    100% {
+        translate: -30px 0
+    }
+}
+
+.overlay-mobile {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    z-index: 40;
+    inset: 0;
+    display: none
+}
+
+@media (min-width: 576px) and (max-width:992px) {
+    .mobile_nav_item:last-child {
+        justify-content:flex-start
+    }
+}
+
+:is(.pfp-swiper-image,.pfp-thumb-image) {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center
+}
+
+:is( .contact-conp-form-input:focus,.contact-conp-form-input:autofill,.contact-conp-form-input:-webkit-autofill )~.contact-conp-form-label {
+    top: -.9rem;
+    font-size: .813rem;
+    color: #000;
+    padding-inline:0.3rem;transition: .3s
+}
+
+#advantages .advantageCarousel::-webkit-scrollbar:horizontal {
+    height: 8px
+}
+
+#advantages .advantageCarousel::-webkit-scrollbar-thumb:window-inactive {
+    background: #1ca8f3
+}
+
+.check_desc ul li::marker {
+    content: "\2713"
+}
+
+@media (max-width: 576px) {
+    .num-nav a {
+        font-size:12px !important;
+    }
+
+    .subsub {
+        font-size: 10px
+    }
+}
+
+.subsub {
+    color: #fff;
+}
+
+.is-sticky .subsub {
+    color: #000 !important;
+    font-size: 15px;
+}
+
+.hamburger-btn svg,.navbar_item svg {
+    fill: var(--white)
+}
+
+.navbar-dropdown {
+    opacity: 0;
+    visibility: hidden
+}
+
+.myHeader {
+    position: absolute;
+    width: 100%;
+    background: 0 0;
+    padding: 10px 0;
+    z-index: 30
+}
+
+.myHeader.is-sticky {
+    backdrop-filter: blur(10px);
+    background: var(--white);
+    animation: .55s ease-in-out slideDown;
+    box-shadow: 0 5px 16px var(--box-shadow-1);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px #dbdbe2
+}
+
+.myHeader.is-sticky .num-nav a,.myHeader.is-sticky .soc-nav a {
+    color: #000!important
+}
+
+.soc-nav a {
+    font-size: 15px
+}
+
+.myHeader.is-sticky .nav-center li a,.myHeader.is-sticky .nav-center li span {
+    color: var(--color-1)
+}
+
+.callAction,.logocolor,.myHeader.myHeader.is-sticky .logowhite {
+    display: none
+}
+
+.hamburger,.myHeader.myHeader.is-sticky .logocolor {
+    display: block
+}
+
+.myHeader.myHeader.is-sticky .hamburger-btn svg,.myHeader.myHeader.is-sticky .navbar_item svg {
+    fill: var(--color-1)
+}
+
+.myHeader.myHeader.is-sticky .callAction button {
+    background-color: var(--default);
+    color: var(--white)
+}
+
+.nav-left {
+    display: flex;
+    gap: 20px;
+    align-items: center
+}
+
+.logowhite {
+    display: block;
+    filter: brightness(1000000)
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+.logo img {
+    max-width: 200px;
+    height: 52px;
+    width: 100%
+}
+
+.nav-center {
+    display: none;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar_item {
+    position: relative;
+    cursor: pointer
+}
+
+.navbar_item svg {
+    transition: .3s ease-in;
+    margin-left: 5px
+}
+
+.navbar_item:hover svg {
+    transform: rotate(180deg);
+    transition: .3s ease-out
+}
+
+.navbar_item:hover .navbar-dropdown {
+    max-height: 200px;
+    opacity: 1;
+    border-color: var(--bg-3);
+    transform: translateY(0);
+    visibility: visible;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15),0 2px 2px rgba(0,0,0,.15),0 4px 4px rgba(0,0,0,.15),0 8px 8px rgba(0,0,0,.15);
+    overflow: visible
+}
+
+.nav-center li span {
+    display: flex;
+    width: fit-content;
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 500;
+    white-space: nowrap;
+    height: 100%;
+    align-items: center
+}
+
+.nav-center li,.nav-center li a {
+    align-items: center;
+    display: flex
+}
+
+.nav-center li a {
+    width: 100%;
+    color: var(--white);
+    height: 100%;
+    font-size: 14px
+}
+
+.navbar-dropdown {
+    margin-top: 40px;
+    top: 0;
+    overflow: hidden;
+    transition: .5s;
+    max-height: 0;
+    position: absolute;
+    border-top: 2px solid;
+    padding: 10px;
+    left: 0;
+    border-radius: 4px;
+    background-color: var(--white)
+}
+
+.nav-right {
+    position: relative
+}
+
+.navbar-dropdown li {
+    padding: 5px 10px!important;
+    transition: .3s ease-in;
+    border-radius: 10px;
+    background: 0 0
+}
+
+.navbar-dropdown li a>span {
+    color: var(--color-2)!important
+}
+
+.navbar-dropdown li:hover {
+    background: #ddd
+}
+
+.nav-center li {
+    line-height: 30px;
+    padding: 0 5px
+}
+
+.nav-center li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    margin-right: 5px;
+    border-radius: 50%
+}
+
+.nav-center li a span {
+    font-size: 14px;
+    font-weight: 500
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.callAction button::before {
+    content: "";
+    background-color: var(--default);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .7s ease-in-out;
+    display: inline-block
+}
+
+.callAction button:hover::before {
+    width: 100%
+}
+
+.callAction button:hover {
+    color: #fff;
+}
+
+.hamburger-btn {
+    background: 0 0;
+    border: none;
+    outline: 0;
+    cursor: pointer
+}
+
+.callAction button {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    padding: 10px 15px;
+    color: var(--default);
+    border: none;
+    font-size: 15px;
+    transition: .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer
+}
+
+@media screen and (min-width: 992px) {
+
+    .nav-center {
+        display: flex
+    }
+
+    .callAction,.nav-right:after {
+        display: block
+    }
+
+    .logo img {
+        max-width: 150px
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .nav-center li a span {
+        font-size: 15px
+    }
+
+    .hamburger {
+        display: none
+    }
+}
+
+:is(.pfp-swiper-image,.pfp-thumb-image) {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center
+}
+
+:is( .contact-conp-form-input:focus,.contact-conp-form-input:autofill,.contact-conp-form-input:-webkit-autofill )~.contact-conp-form-label {
+    top: -.9rem;
+    font-size: .813rem;
+    color: #000;
+    padding-inline:0.3rem;transition: .3s
+}
+
+#advantages .advantageCarousel::-webkit-scrollbar:horizontal {
+    height: 8px
+}
+
+#advantages .advantageCarousel::-webkit-scrollbar-thumb:window-inactive {
+    background: #1ca8f3
+}
+
+.check_desc ul li::marker {
+    content: "\2713"
+}
+nav a{
+    text-decoration: none;
+}
+
