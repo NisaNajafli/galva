@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Galva</title>
 </head>
 <body>
     <div class="all_sidebar">
@@ -79,8 +84,8 @@
             <nav class="nav-wrapper">
                 <div class="logo-area">
                         <a href="/" class="logo">
-                            <img src="/img/galvalogo.webp" width="150" height="60" class="logowhite" alt="Galva-Tech">
-                            <img src="/img/galvalogo.webp" width="150" height="60" class="logocolor" alt="Galva-Tech">
+                            <img src="/img/galvalogo.webp" class="logowhite" alt="Galva-Tech">
+                            <img src="/img/galvalogo.webp"  class="logocolor" alt="Galva-Tech">
                         </a>
                     </div>
                 <div class="nav-left">
@@ -114,7 +119,7 @@
                         <ul class="d-flex align-items-center gap-2">
                             <li><a target="_blank" href="https://wa.me/79055556025" class="text-white">
                                 <svg
-                                 xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 0 1 7.021 2.91 9.788 9.788 0 0 1 2.909 6.99z" fill="#000000" opacity="1" data-original="#000000"></path></g>
+                                 xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 0 1 7.021 2.91 9.788 9.788 0 0 1 2.909 6.99z" fill="#000000" opacity="1" data-original="#000000"></path></g>
                                 </svg>
                             </a></li>
                            
@@ -153,14 +158,439 @@
     </header>
 
     <main>
+        <section id="hero">
+            <div class="hero-caption">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, excepturi?</p>
+            <div class="btns">
+                <a href="#" class="btn btn-white">
+                MORE THAN
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                </a>
+                <a href="#" class="btn btn-outline">
+                ONLINE REQUEST
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                </a>
+            </div>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+            <div class="item" style="background-image:url('img/slider1.jpg');">
+                <div class="overlay"></div>
+            </div>
+            <div class="item" style="background-image:url('img/slider2.jpg');">
+                <div class="overlay"></div>
+            </div>
+            <div class="item" style="background-image:url('img/slider3.webp');">
+                <div class="overlay"></div>
+            </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="swiper">
+                <div class="title">
+                <div>
+                    <span>УСЛУГИ</span>
+                <h2>ПРОФЕССИОНАЛЬНО ВЫПОЛНИМ</h2>
+                </div>
+                <div class="swiper-nav-top">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+                <div class="swiper-wrapper">
+
+                <div class="swiper-slide" data-se-skew="6">
+                    <img src="img/about1.webp" alt="Цинкование">
+                    <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>Цинкование</h3> 
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nostrum eaque reprehenderit odit ab excepturi nihil assumenda doloremque rerum et.</p>
+                        <a href="#" class="slide-btn"> Подробнее
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg> -->
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-se-skew="6">
+                    <img src="img/about2.webp" alt="Цинкование">
+                    <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>Цинкование</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum excepturi molestiae delectus minima? Expedita eligendi consequatur soluta ut beatae esse!</p>
+                        <a href="#" class="slide-btn"> Подробнее
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg> -->
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-se-skew="6">
+                    <img src="img/about3.webp" alt="Цинкование">
+                    <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>Цинкование</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis reiciendis voluptas beatae voluptatem possimus ipsa sint eius aut officiis.</p>
+                        <a href="#" class="slide-btn"> Подробнее
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg> -->
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-se-skew="6">
+                    <img src="img/about4.webp" alt="Цинкование">
+                    <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>Цинкование</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam veritatis labore repellendus fuga excepturi, facilis accusamus atque ab ratione.</p>
+                        <a href="#" class="slide-btn"> Подробнее
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg> -->
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-se-skew="6">
+                    <img src="img/about5.webp" alt="Цинкование">
+                    <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>Цинкование</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus quibusdam architecto dolor numquam quae. Voluptates suscipit reiciendis perferendis. Ipsa.
+                        </p>
+                        <a href="#" class="slide-btn"> Подробнее
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg> -->
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-se-skew="6">
+                    <img src="img/about6.webp" alt="Цинкование">
+                    <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>Цинкование</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, quo cumque. Inventore ipsum impedit nostrum aut illum a, dolorem non.</p>
+                        <a href="#" class="slide-btn"> Подробнее
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg> -->
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                </div>
+
+                
+            </div>
+        </section>
+        <section class="coatings">
+            <div class="container">
+                <div class="section-title">
+                <h2>Виды наносимых покрытий</h2>
+                </div>
+
+                <div class="coatings-grid">
+                <div class="coating-card">
+                    <img src="img/coating1.jpg" alt="Coating 1">
+                    <div class="coating-overlay">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, repellat.</p>
+                    </div>
+                </div>
+
+                <div class="coating-card">
+                    <img src="img/coating5.webp" alt="Coating 2">
+                    <div class="coating-overlay">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, repellat.</p>
+                    </div>
+                </div>
+
+                <div class="coating-card">
+                    <img src="img/coating2.webp" alt="Coating 3">
+                    <div class="coating-overlay">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, repellat.</p>
+                    </div>
+                </div>
+
+                <div class="coating-card">
+                    <img src="img/coating4.webp" alt="Coating 4">
+                    <div class="coating-overlay">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, repellat.</p>
+                    </div>
+                </div>
+
+                <div class="coating-card">
+                    <img src="img/coating6.webp" alt="Coating 5">
+                    <div class="coating-overlay">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, repellat.</p>
+                    </div>
+                </div>
+
+                <div class="coating-card">
+                    <img src="img/coating3.webp" alt="Coating 6">
+                    <div class="coating-overlay">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, repellat.</p>
+                    </div>
+                </div>
+
+                <div class="coating-card">
+                    <img src="img/coating7.png" alt="Coating 7">
+                    <div class="coating-overlay">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, repellat.</p>
+                    </div>
+                </div>
+
+                <div class="coating-card">
+                    <img src="img/coating8.webp" alt="Coating 8">
+                    <div class="coating-overlay">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, repellat.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+            <div class="container">
+                <div class="pricing-title">
+                <h2>Цены</h2>
+                </div>
+
+                <div class="pricing-table-wrapper">
+                <table class="pricing-table">
+                    <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Наименование покрытия</th>
+                        <th>Стоимость, 1дм²</th>
+                        <th>Стоимость, кг</th>
+                        <th>Толщина покрытия, мкм</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Цинкование белое</td>
+                        <td>100 руб.</td>
+                        <td>300 руб.</td>
+                        <td>6–24</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Цинкование радужное</td>
+                        <td>110 руб.</td>
+                        <td>320 руб.</td>
+                        <td>6–24</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="pricing-notes">
+                <p><strong>Внимание!</strong> Минимальная стоимость нанесения покрытия — <strong>5000 руб.</strong></p>
+                <p>Изделия на нанесения покрытия принимаются в соответствии с ГОСТ ******.</p>
+                <p>В случае присутствия на деталях следов коррозии, консервационных смазок — <strong>+30% к стоимости.</strong></p>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
-    <footer></footer>
+   <footer class="footer ">
+        <div class="container">
+            <div class="footer-head">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="footer-left">
+                            <figure class="footer-logo">
+                                <a href="/">
+                                    <img src="/img/galvalogo.webp" alt="Galva-Tech">
+                                </a>
+                            </figure>
+                            <article class="footer-left-content">
+                                <p>
+                                    Наша цель - предоставлять промышленным предприятиям полный цикл гальванических
+                                    решений — от оборудования и расходников до техподдержки — с высоким качеством и
+                                    оптимальной&nbsp;ценой.
+                                </p>
+                                <ul class="footer-social-list">
+                                    <li>
+                                        <a href="https://wa.me/+79055556025">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" x="0" y="0" viewBox="0 0 682 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                                <g>
+                                                    <path fill-rule="evenodd" d="M544.387 93.008C484.512 33.063 404.883.035 320.05 0 145.246 0 2.98 142.262 2.91 317.113c-.024 55.895 14.577 110.457 42.331 158.551L.25 640l168.121-44.102c46.324 25.27 98.477 38.586 151.55 38.602h.134c174.785 0 317.066-142.273 317.132-317.133.036-84.742-32.921-164.418-92.8-224.36zM320.05 580.94h-.11c-47.296-.02-93.683-12.73-134.16-36.742l-9.62-5.715-99.766 26.172 26.628-97.27-6.27-9.972c-26.386-41.969-40.32-90.476-40.296-140.281.055-145.332 118.305-263.57 263.7-263.57 70.406.023 136.59 27.476 186.355 77.3s77.156 116.051 77.133 186.485C583.582 462.69 465.34 580.94 320.05 580.94zm144.586-197.418c-7.922-3.968-46.883-23.132-54.149-25.78-7.258-2.645-12.547-3.962-17.824 3.968-5.285 7.93-20.469 25.781-25.094 31.066-4.625 5.29-9.242 5.953-17.168 1.985-7.925-3.965-33.457-12.336-63.726-39.332-23.555-21.012-39.457-46.961-44.082-54.89-4.617-7.938-.04-11.813 3.476-16.173 8.578-10.652 17.168-21.82 19.809-27.105 2.644-5.29 1.32-9.918-.664-13.883-1.977-3.965-17.824-42.969-24.426-58.84-6.437-15.445-12.965-13.36-17.832-13.601-4.617-.231-9.902-.278-15.187-.278-5.282 0-13.868 1.98-21.133 9.918-7.262 7.934-27.73 27.102-27.73 66.106s28.394 76.683 32.355 81.972c3.96 5.29 55.879 85.328 135.367 119.649 18.906 8.172 33.664 13.043 45.176 16.695 18.984 6.031 36.254 5.18 49.91 3.14 15.226-2.277 46.879-19.171 53.488-37.68 6.602-18.51 6.602-34.374 4.617-37.683-1.976-3.304-7.261-5.285-15.183-9.254zm0 0" fill="#000000" opacity="1" data-original="#000000" class="">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                   <li>
+                                        <a href="mailto:info@galva-tech.ru">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M467 76H45C20.238 76 0 96.149 0 121v270c0 24.86 20.251 45 45 45h422c24.762 0 45-20.149 45-45V121c0-24.857-20.248-45-45-45zm-6.91 30L267.624 299.094c-5.864 5.882-17.381 5.886-23.248 0L51.91 106h408.18zM30 385.485v-258.97L159.065 256 30 385.485zM51.91 406l128.334-128.752 42.885 43.025c17.574 17.631 48.175 17.624 65.743 0l42.885-43.024L460.09 406H51.91zM482 385.485 352.935 256 482 126.515v258.97z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://t.me/galvatech">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M501.974 41.949a30.939 30.939 0 0 0-30.555-6.565L21.231 183.785C8.962 187.829.642 198.781.035 211.684c-.606 12.904 6.649 24.589 18.483 29.768l111.335 48.712 33.591 155.795c1.395 6.472 4.68 12.237 11.639 14.01 7.039 1.793 12.012-2.054 17.264-5.986l82.62-61.865 96.589 79.039c5.626 4.606 12.502 7.008 19.513 7.008a31.091 31.091 0 0 0 9.986-1.657c10.166-3.447 17.702-11.744 20.159-22.193L511.18 71.813a30.938 30.938 0 0 0-9.206-29.864zm-302.43 276.128c-.055.13-.109.277-.16.453l-18.624 65.068-20.784-96.395 142.917-79.405-99.921 104.478a15.03 15.03 0 0 0-3.428 5.801zm5.911 88.525 8.459-29.555 8.091-28.269 28.991 23.724-45.541 34.1zM481.908 64.927l-89.965 382.502c-.045.19-.105.452-.545.601-.436.148-.648-.021-.798-.145l-105.691-86.488-.008-.007-48.969-40.072L393.255 156.82a15.035 15.035 0 0 0 1.035-19.579 15.034 15.034 0 0 0-19.204-3.955L142.135 262.715 30.572 213.902c-.34-.148-.527-.231-.5-.806.027-.573.221-.638.573-.754l450.188-148.4c.218-.071.464-.153.826.177.362.332.302.584.249.808z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="footer-right">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 col-md-6">
+                                    <div class="footer-right-content">
+                                        <h4>О компании</h4>
+                                        <ul class="footer-right-links">
+                                            <li><a href="/o-kompanii/">Гальванических покрытий</a></li>
+                                            <li><a href="/qalereya/">Виды наносимых покрытий</a></li>
+                                            <li><a href="/dokumentatsiya/">Цены</a></li>
+                                            <!--<li><a href="/servis/">Servis</a></li>-->
+                                            <li><a href="/kataloq/">Наши работы</a></li>
+                                            <li><a target="_blank" href="https://t.me/galvatech">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 col-md-6">
+                                    <div class="footer-right-content">
+                                        <h4>Режим работы</h4>
+                                        <ul class="footer-right-links">
+                                            <li>
+                                                <p>
+                                                    <svg id="Layer_1" height="16" viewBox="0 0 24 24" fill="currentColor" width="16" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+                                                        <path d="m24 12a1 1 0 0 1 -2 0 10.011 10.011 0 0 0 -10-10 1 1 0 0 1 0-2 12.013 12.013 0 0 1 12 12zm-8 1a1 1 0 0 0 0-2h-2.277a2 2 0 0 0 -.723-.723v-3.277a1 1 0 0 0 -2 0v3.277a1.994 1.994 0 1 0 2.723 2.723zm-14.173-6.216a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm.173 5.216a1 1 0 1 0 -1 1 1 1 0 0 0 1-1zm10 10a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm-7.779-18.793a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm3.558-2.366a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm-5.952 14.375a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm2.394 3.577a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm3.558 2.366a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm14.394-5.943a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm-2.394 3.577a1 1 0 1 0 1 1 1 1 0 0 0 -1-1zm-3.558 2.366a1 1 0 1 0 1 1 1 1 0 0 0 -1-1z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Режим работы пн-пт&nbsp;9:00-18:00</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:info@galva-tech.ru">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="16" fill="currentColor" height="16">
+                                                        <path d="M23.954,5.542,15.536,13.96a5.007,5.007,0,0,1-7.072,0L.046,5.542C.032,5.7,0,5.843,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6C24,5.843,23.968,5.7,23.954,5.542Z">
+                                                        </path>
+                                                        <path d="M14.122,12.546l9.134-9.135A4.986,4.986,0,0,0,19,1H5A4.986,4.986,0,0,0,.744,3.411l9.134,9.135A3.007,3.007,0,0,0,14.122,12.546Z">
+                                                        </path>
+                                                    </svg>
+
+                                                    <span> info@galva-tech.ru</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:+79055556025">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" fill="currentColor" height="16">
+                                                        <path d="m23.5,11c-.276,0-.5-.224-.5-.5,0-5.238-4.262-9.5-9.5-9.5-.276,0-.5-.224-.5-.5s.224-.5.5-.5c5.79,0,10.5,4.71,10.5,10.5,0,.276-.224.5-.5.5Zm-3.5-.5c0-3.584-2.916-6.5-6.5-6.5-.276,0-.5.224-.5.5s.224.5.5.5c3.033,0,5.5,2.467,5.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5Zm2.234,11.771l.978-1.125c.508-.508.788-1.184.788-1.902s-.28-1.395-.837-1.945l-2.446-1.873c-1.048-1.048-2.753-1.049-3.803-.003l-1.532,1.494c-3.68-1.499-6.678-4.5-8.294-8.303l1.488-1.525c1.049-1.049,1.049-2.756.043-3.756l-1.959-2.543c-1.017-1.017-2.813-.993-3.78-.023l-1.174,1.024C.605,2.886,0,4.373,0,5.976c0,7.749,10.275,18.024,18.024,18.024,1.603,0,3.089-.605,4.21-1.729ZM5.909,1.446l1.959,2.543c.659.659.659,1.732-.004,2.396l-1.722,1.766c-.138.142-.18.352-.106.536,1.729,4.305,5.113,7.688,9.286,9.28.182.07.388.027.527-.108l1.766-1.722s.003-.003.004-.005c.639-.64,1.704-.681,2.44.043l2.446,1.873c.659.659.659,1.731-.023,2.416l-.979,1.125c-.908.91-2.144,1.411-3.479,1.411C10.864,23,1,13.136,1,5.976c0-1.335.501-2.571,1.387-3.456l1.175-1.025c.336-.336.779-.5,1.215-.5.419,0,.831.152,1.133.452Z">
+                                                        </path>
+                                                    </svg>
+                                                    +7 905 555 60 25
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 col-md-6">
+                                    <div class="footer-right-content">
+                                        <h4>Адрес</h4>
+                                        <ul class="footer-right-links">
+                                            <li>
+                                                <p class="d-flex align-items-start">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="16" fill="currentColor" height="16">
+                                                        <path d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z">
+                                                        </path>
+                                                        <path d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Московская область, г.о. Солнечногорск, пгт. Андреевка, д.31в
+                                                    </span>
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-6">
+                            <div class="copyright">
+                                © 2025
+                                <a href="/">Galva Technologies</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-6">
+                            <a href="https://jeywastudio.com" class="siteby-content">
+                                <img src="/img/jeywa-black.webp" width="150" alt="Galva-Tech">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000, // 2 seconds per image
+      autoplayHoverPause: false,
+      smartSpeed: 1000,
+      animateOut: "fadeOut",
+      nav: true,
+      dots: false,
+      navText: ["‹", "›"]
+    });
+    new Swiper('.swiper', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      1200: { slidesPerView: 4 },
+      992: { slidesPerView: 3 },
+      768: { slidesPerView: 2 },
+      480: { slidesPerView: 1.2 }
+    }
+  });
+  </script>
 </body>
 </html>
