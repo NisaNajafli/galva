@@ -951,7 +951,7 @@ nav a{
     }
 
     .slide-content {
-      color: var(--text);
+      color: #fff;
       z-index: 2;
       transition: all 0.4s ease;
       background-color: var(--default);
@@ -979,9 +979,9 @@ nav a{
       opacity: 1;
       max-height: 120px;
     }
-    /* .swiper-slide:hover .slide-content h3{
-        color: #e44a1b
-    } */
+    .swiper-slide:hover .slide-content h3{
+        color: var(--accent)
+    }
 
 
     /* Button (arrow only) */
@@ -1088,6 +1088,7 @@ nav a{
       font-size: 18px;
       font-weight: 700;
     }
+  
 
     /* Move buttons to top right */
     .swiper-nav-top {
@@ -1103,6 +1104,333 @@ nav a{
       .swiper-slide { height: 320px; }
       .services .title h2 { font-size: 28px; }
     }
+
+
+:root {
+  --accent: #e44a1b;
+  --dark: #101010;
+  --text: #111;
+  --bg-light: #f5f6f7;
+  --btn-bg: #101826;
+}
+
+.about-section {
+  position: relative;
+  background: #f2f3f5;
+  padding: 80px 0;
+}
+
+/* the angled white cut at bottom right */
+.about-section::after {
+    content: "";
+    position: absolute;
+    height: 119px;
+    right: 0%;
+    bottom:-5%;
+    width: 28%;
+    height: 94px;
+    background: #fff;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+.about-section::before {
+  content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 28%;
+    height: 94px;
+    background: #fff;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+
+/* keep your about-right image above background shape */
+.about-right {
+  background: url(../img/slider3.webp) center/cover no-repeat;
+  position: absolute;
+  width: 48%;
+  height: 72%;
+  right: 1%;
+  top: 100px;
+  z-index: 2;
+  border-top-left-radius: 94px;
+}
+
+/* make sure text stays above the background */
+.about-left {
+  position: relative;
+  width: 50%;
+  z-index: 3;
+  text-align: left;
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 0;
+  margin-bottom: 30px;
+}
+
+
+
+.about-subtitle {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.about-left h2 {
+  font-size: 34px;
+  color: var(--dark);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.about-lead {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.about-left p {
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.about-list {
+  list-style: disc;
+  margin: 15px 0 10px 0;
+  list-style-image: url(https://galvanika-udm.ru/images/styles/9vkxb1fyjq6tp0u978r2.svg);
+}
+
+.about-list li {
+  position: relative;
+  color: #222;
+  font-size: 15px;
+  padding-left: 5px;
+}
+.about-list li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: auto !important;
+}
+/* .about-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+} */
+
+.about-btn {
+  display: inline-block;
+  background: var(--btn-bg);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #16113ba3;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left {
+    flex: 1 1 100%;
+  }
+
+  .about-right {
+    flex: 1 1 100%;
+  }
+
+  .about-right img {
+    margin-top: 20px;
+  }
+}
+
+
+.application-section {
+  position: relative;
+  background: #f2f3f5;
+  padding: 80px 0;
+  overflow: hidden;
+}
+.application-section::after{
+  content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 28%;
+    height: 50px;
+    background: #fff;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+
+.section-header .subtitle {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: var(--text-dark);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.icons-grid {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.icon-item {
+  flex: 1;
+  min-width: 130px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* hex style */
+.hex{
+  width: 90px;
+  height: 100px;
+}
+.hex img {
+  width: 100%;
+  height: auto;
+}
+
+.icon-item p {
+  margin-top: 18px;
+  font-weight: 600;
+  color: #111;
+  font-size: 15px;
+  line-height: 1.3;
+  max-width: 150px;
+}
+
+.hex:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* responsive layout */
+@media (max-width: 992px) {
+  .icons-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .icon-item {
+    flex: 0 0 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-item {
+    flex: 0 0 45%;
+  }
+  .hex {
+    width: 90px;
+    height: 100px;
+  }
+  .hex img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+/* .icons-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 40px;
+}
+
+.icon-item {
+  width: 14%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.hex{
+  width: 90px;
+  height: 100px;
+}
+.hex img {
+  width: 100%;
+  height: auto;
+}
+
+.icon-item p {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #111;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.hex:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .icons-grid {
+    gap: 25px;
+  }
+  .icon-item {
+    width: 100px;
+  }
+  .hex {
+    width: 80px;
+    height: 80px;
+  }
+  .hex img {
+    width: 35px;
+    height: 35px;
+  }
+} */
 
     .coatings {
     padding: 40px 0;
@@ -1451,474 +1779,6 @@ filter: grayscale(100%);
     text-align: center;
     margin: 0 auto;
 }
-
-/* end o fburger menu section*/
-@media only screen and (max-width: 991px) {
-
-    .projects .owl-nav .owl-next,
-    .projects .owl-nav .owl-prev {
-        background: #ff5a2d82 !important;
-    }
-
-    .projects .owl-nav .owl-next svg path,
-    .projects .owl-nav .owl-prev svg path {
-        fill: #fff;
-    }
-
-    body {
-        padding-bottom: 60px;
-    }
-
-    .projects .owl-nav .owl-prev {
-        left: 0;
-    }
-
-    .projects .owl-nav .owl-next {
-        right: 0;
-    }
-
-   
-}
-
-
-.projects .owl-carousel {
-  position: relative;
-}
-.projects .owl-nav .owl-prev { 
-  position: absolute;
-  top: 40%;
-  left: 29%;
-  transform: translateY(-50%);
-  width: 62px;
-  height: 62px;
-  background-color: #fff !important;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s all;
-}
-
-
-
-
-.projects .owl-nav .owl-next { 
-  position: absolute;
-  top: 40%;
-  right: 29%;
-  transform: translateY(-50%);
-  width: 62px;
-  height: 62px;
-  background-color: #fff !important;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s all;
-}
-.projects .owl-nav .owl-next:last-child  svg{
-    transform: rotate(180deg);
-}
-@media only screen and (max-width: 991px) {
- 
-  .projects .owl-nav .owl-next, .projects .owl-nav .owl-prev {
-      background:#dfc29e !important;
-  }
-  .projects .owl-nav .owl-next svg path, .projects .owl-nav .owl-prev svg path{
-      fill:#fff;
-  }
-.projects {
-    padding-bottom: 30px;
-}
-
-  
-
-.projects .owl-nav .owl-prev{
-  left: 0!important;
-}
-.projects .owl-nav .owl-next{
-  right:0!important;
-}
-
-}
-
-/*new-slider*/
-
-/* Слайды */
-
-/* === Вертикальный прогресс-бар слева === */
-
-
-
-/* Кнопки */
-
-
-
-.owl-dots.disabled {
-  display: none;
-}
-
-.owl-carousel .owl-stage-outer {
-  margin-bottom: 0;
-}
-
-/* header */
-
-/*header #myMenu .navbar-nav .nav-item:hover .nav-link,*/
-/*header #myMenu .navbar-nav .nav-item.active .nav-link {*/
-/*  color: #c2a73d;*/
-/*}*/
-a:hover {
-    color:inherit;
-}
-
-
-
-
-
-/* main section */
-
-/*#main #wowslider-container1 .lines .line {*/
-/*  width: 60px;*/
-/*  height: 100%;*/
-/*  position: relative;*/
-/*}*/
-
-/*#main #wowslider-container1 .lines .line::before {*/
-/*  content: '';*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  width: 1px;*/
-/*  height: 100%;*/
-/*  background-color: rgba(255, 255, 255, 0.2);*/
-/*  z-index: 1;*/
-/*}*/
-
-/* best products */
-
-/* categories */
-
-/* stores */
-
-/*#stores .stores-row p {*/
-/*  font-size: 20px;*/
-/*  font-weight: 500;*/
-/*  line-height: 32px;*/
-/*}*/
-
-/*#stores .stores-row .stores-wrap {*/
-/*  position: absolute;*/
-/*  top: 60px;*/
-/*  right: 100px;*/
-/*}*/
-
-/*#stores .stores-row .stores-wrap .store-box-wrap {*/
-/*    width: 47%;*/
-/*}*/
-
-/* news */
-
-/* call-to-action */
-
-/* footer */
-
-
-/* modal */
-
-
-/* pagination */
-
-
-/* form */
-
-
-/* breadcrumb */
-
-
-/* inside pages */
-
-
-@media only screen and (max-width: 1600px) {
-  /*header {*/
-  /*  padding: 60px 180px 60px 60px;*/
-  /*}*/
-  
-  /*#stores .stores-row .stores-wrap {*/
-  /*  right: 70px;*/
-  /*}*/
-}
-
-
-@media only screen and (max-width: 1530px) {
-  /*#stores .stores-row .stores-wrap .store-box-wrap .store-box .store-text {*/
-  /*  padding: 8px 10px;*/
-  /*}*/
-}
-
-
-@media only screen and (max-width: 575.99px) {
-    
-    /*.full-content .bullets img, */
-    /*#productModal .carousel-indicators button {*/
-    /*    margin: 0 10px;*/
-    /*}*/
-}
-/**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
-.owl-carousel,
-.owl-carousel .owl-item {
-	-webkit-tap-highlight-color: transparent;
-	position: relative
-}
-
-.owl-carousel {
-	display: none;
-	width: 100%;
-	z-index: 1
-}
-
-.owl-carousel .owl-stage {
-	position: relative;
-	-ms-touch-action: pan-Y;
-	touch-action: manipulation;
-	-moz-backface-visibility: hidden
-}
-
-.owl-carousel .owl-stage:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0
-}
-
-.owl-carousel .owl-stage-outer {
-	position: relative;
-	overflow: hidden;
-	-webkit-transform: translate3d(0, 0, 0);
-	margin-bottom: 20px;
-}
-
-.owl-carousel .owl-item,
-.owl-carousel .owl-wrapper {
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0)
-}
-
-.owl-carousel .owl-item {
-	min-height: 1px;
-	float: left;
-	-webkit-backface-visibility: hidden;
-	-webkit-touch-callout: none
-}
-
-.owl-carousel .owl-item img {
-	display: block;
-	width: 100%
-}
-
-/*.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}*/
-.no-js .owl-carousel,
-.owl-carousel.owl-loaded {
-	display: block
-}
-
-.owl-carousel .owl-dot,
-.owl-carousel .owl-nav .owl-next,
-.owl-carousel .owl-nav .owl-prev {
-	cursor: pointer;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none
-}
-
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
-	color: white;
-	padding: 8px 15px;
-	border-radius: 50%;
-	border: 7px solid white;
-	position: absolute;
-	transition: 300ms all ease
-}
-
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev {
-	background: #e8e8e8;
-}
-
-/* .owl-carousel button.owl-dot {
-	background: #f58220;
-} */
-
-.owl-carousel .owl-nav button.owl-prev {
-	left: -42px;
-	top: 40%;
-}
-
-.owl-carousel .owl-nav button.owl-next {
-	right: -42px;
-	top: 40%;
-}
-
-.owl-carousel.owl-loading {
-	opacity: 0;
-	display: block
-}
-
-.owl-carousel.owl-hidden {
-	opacity: 0
-}
-
-.owl-carousel.owl-refresh .owl-item {
-	visibility: hidden
-}
-
-.owl-carousel.owl-drag .owl-item {
-	-ms-touch-action: pan-y;
-	touch-action: pan-y;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none
-}
-
-.owl-carousel.owl-grab {
-	cursor: move;
-	cursor: grab
-}
-
-.owl-carousel.owl-rtl {
-	direction: rtl
-}
-
-.owl-carousel.owl-rtl .owl-item {
-	float: right
-}
-
-.owl-carousel .animated {
-	animation-duration: 1s;
-	animation-fill-mode: both
-}
-
-.owl-carousel .owl-animated-in {
-	z-index: 0
-}
-
-.owl-carousel .owl-animated-out {
-	z-index: 1
-}
-
-.owl-carousel .fadeOut {
-	animation-name: fadeOut
-}
-
-@keyframes fadeOut {
-	0% {
-		opacity: 1
-	}
-
-	100% {
-		opacity: 0
-	}
-}
-
-.owl-height {
-	transition: height .5s ease-in-out
-}
-
-.owl-carousel .owl-item .owl-lazy {
-	opacity: 0;
-	transition: opacity .4s ease
-}
-
-.owl-carousel .owl-item .owl-lazy:not([src]),
-.owl-carousel .owl-item .owl-lazy[src^=""] {
-	max-height: 0
-}
-
-.owl-carousel .owl-item img.owl-lazy {
-	transform-style: preserve-3d
-}
-
-.owl-carousel .owl-video-wrapper {
-	position: relative;
-	height: 100%;
-	background: #000
-}
-
-.owl-carousel .owl-video-play-icon {
-	position: absolute;
-	height: 80px;
-	width: 80px;
-	left: 50%;
-	top: 50%;
-	margin-left: -40px;
-	margin-top: -40px;
-	background: url(owl.video.play.png) no-repeat;
-	cursor: pointer;
-	z-index: 1;
-	-webkit-backface-visibility: hidden;
-	transition: transform .1s ease
-}
-
-.owl-carousel .owl-video-play-icon:hover {
-	-ms-transform: scale(1.3, 1.3);
-	transform: scale(1.3, 1.3)
-}
-
-.owl-carousel .owl-video-playing .owl-video-play-icon,
-.owl-carousel .owl-video-playing .owl-video-tn {
-	display: none
-}
-
-.owl-carousel .owl-video-tn {
-	opacity: 0;
-	height: 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	transition: opacity .4s ease
-}
-
-.owl-carousel .owl-video-frame {
-	position: relative;
-	z-index: 1;
-	height: 100%;
-	width: 100%
-}/**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
-.owl-theme .owl-dots,.owl-theme .owl-nav
-{-webkit-tap-highlight-color:transparent}
-.owl-theme .owl-nav{margin-right: 200px;float:right;bottom: -60px;}
-.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer}
-.owl-theme .owl-nav [class*=owl-]:hover{background:#fff;color:#ccc;text-decoration:none}
-.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}
-.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}
-.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}
-.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}
-.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
-
-
-
-
-
-
 
 
 .footer-head .row,.footer-right .row,.row {
