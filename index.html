@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
     <link rel="stylesheet" href="css/style.css">
     <title>Galva</title>
 </head>
@@ -80,7 +82,7 @@
         <div class="overlay-mobile" style="display: none;"></div>
     </div>
     <header class="myHeader is-sticky">
-        <div class="container">
+        <div class="header-container">
             <nav class="nav-wrapper">
                 <div class="logo-area">
                         <a href="/" class="logo">
@@ -178,7 +180,7 @@
             </div>
             </div>
 
-            <div class="owl-carousel owl-theme">
+            <div class=" hero-slider owl-carousel owl-theme">
             <div class="item" style="background-image:url('img/slider1.jpg');">
                 <div class="overlay"></div>
             </div>
@@ -493,6 +495,83 @@
             </div>
         </section>
         
+       <section class="projects gallery">
+  <div class="section-title">
+    <h2 class="mb-5">Gallery</h2>
+  </div>
+
+  <div class="owl-carousel gallery-carousel">
+    <div class="item">
+      <a href="img/project1.jpg"  data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project1.jpg" alt="Image 1">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project2.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project2.jpg" alt="Image 2">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project3.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project3.jpg" alt="Image 3">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project4.jpg" alt="Image 4">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project5.jpg" alt="Image 3">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project6.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project6.jpg" alt="Image 4">
+      </a>
+    </div>
+   <div class="item">
+      <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project4.jpg" alt="Image 4">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project5.jpg" alt="Image 3">
+      </a>
+    </div><div class="item">
+      <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project4.jpg" alt="Image 4">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project5.jpg" alt="Image 3">
+      </a>
+    </div><div class="item">
+      <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project4.jpg" alt="Image 4">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project5.jpg" alt="Image 3">
+      </a>
+    </div><div class="item">
+      <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project4.jpg" alt="Image 4">
+      </a>
+    </div>
+    <div class="item">
+      <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+        <img src="img/project5.jpg" alt="Image 3">
+      </a>
+    </div>
+  </div>
+</section>
+
+
     </main>
 
    <footer class="footer ">
@@ -639,12 +718,14 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 <script src="main.js"></script>
   <script>
-    $(".owl-carousel").owlCarousel({
+    $(".hero-slider").owlCarousel({
       items: 1,
       loop: true,
       autoplay: true,
@@ -670,6 +751,39 @@
       480: { slidesPerView: 1.2 }
     }
   });
+  $('.gallery-carousel').owlCarousel({
+  loop: true,
+  center: true,
+  items: 3,
+  margin: 50,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  smartSpeed: 250,
+  nav: true,
+  dots: false,
+  navText: [
+    '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 492 492"><path d="M198.6 246.1L382.7 62c5.1-5.1 7.9-11.8 7.9-19s-2.8-14-7.9-19L366.6 7.9c-5.1-5.1-11.9-7.9-19.1-7.9s-13.9 2.8-19 7.9L109.3 227c-5.1 5.1-7.9 11.9-7.9 19.1s2.8 14 7.9 19.1l219 219c5.1 5.1 11.8 7.9 19 7.9s14-2.8 19.1-7.9l16.1-16.1c10.5-10.5 10.5-27.6 0-38.1L198.6 246.1z"/></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 492 492"><path d="M382.7 226.8L163.7 7.9c-5-5.1-11.8-7.9-19-7.9s-14 2.8-19.1 7.9l-16.1 16.1c-10.5 10.5-10.5 27.6 0 38.1L293.4 245.9 109.3 430c-5.1 5.1-7.9 11.8-7.9 19.1s2.8 14 7.9 19.1l16.1 16.1c5.1 5.1 11.9 7.9 19.1 7.9s14-2.8 19-7.9l219-219c5.1-5.1 7.9-11.9 7.9-19.1s-2.8-14-7.9-19.1z"/></svg>'
+  ],
+  responsive: {
+    0: { items: 1 },
+    768: { items: 1.5 },
+    1200: { items: 3 }
+  }
+});
+ Fancybox.bind("[data-fancybox='gallery']", {
+    Thumbs: { autoStart: true }, // enables bottom thumbnails
+    Toolbar: {
+      display: [
+        { id: "counter", position: "center" },
+        "zoom",
+        "slideshow",
+        "fullscreen",
+        "close"
+      ]
+    }
+  });
+
   </script>
 </body>
 </html>
