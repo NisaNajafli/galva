@@ -897,8 +897,11 @@ nav a{
         justify-content: space-between !important;
       }
       .logo img{
-        min-width: 120px;
-        height: 36px;
+        width: 120px !important;
+        min-width: 120px !important;
+      }
+      header{
+        padding: 20px 0 !important;
       }
       .btn{
         font-size: 12px;
