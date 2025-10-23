@@ -107,7 +107,8 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom: 1px solid #f1ebeb
+    border-bottom: 1px solid #f1ebeb;
+    width: 100%;
 }
 
 .cancel_logo_mobile .logo_mobile {
@@ -656,6 +657,7 @@ nav a{
     }
     .header-container{
   width: 100%;
+  padding: 0 10px;
 }
 
     .logo img {
@@ -858,7 +860,7 @@ nav a{
         flex-wrap: wrap;
       }
 
-      nav {
+      header nav {
         gap: 25px;
         flex-wrap: wrap;
         justify-content: center;
@@ -893,7 +895,7 @@ nav a{
       .hero-caption p{
         margin-bottom: 25px !important;
       }
-      nav, .nav-wrapper{
+      header nav, .nav-wrapper{
         justify-content: space-between !important;
       }
       .logo img{
@@ -1438,7 +1440,13 @@ nav a{
   max-width: 1200px;
   margin: 0 auto; 
 }
-
+@media (max-width:768px){
+  .icons-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+}
 .icon-item {
   flex: 1;
   min-width: 130px;
@@ -1934,12 +1942,12 @@ nav a{
 @media (max-width: 992px) {
   .onfooter-box {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 40px 10px;
     text-align: center;
     align-items:center
   }
   .onfooter-form{
-    width: 80%;
+    width: 90%;
   }
   .form-row {
     flex-direction: column;
