@@ -34,3 +34,17 @@ $(document).ready(function() {
     })
 });
 
+document.querySelectorAll('.mobile_nav_links').forEach(link => {
+  link.addEventListener('click', () => {
+    // Navbar classlarını sıfırla
+    const navbar = document.getElementById('mobile_navbar');
+    navbar.className = '';
+
+    // Overlay gizlət
+    const overlay = document.querySelector('.overlay-mobile');
+    if (overlay) {
+      overlay.style.display = 'none';
+    }
+  });
+});
+
