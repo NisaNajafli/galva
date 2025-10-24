@@ -1910,7 +1910,70 @@ nav a{
     font-size: 15px;
   }
 }
+.contact-page{
+  padding: 40px 0;
+}
+#map{
+  height: 100%;
+}
+.contact-page a{
+  text-decoration: none;
+  color: #fff
+}
+.contact-page ul li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-page ul li a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.contact-box {
+    background: linear-gradient(270deg, rgba(6, 4, 43, 0.669) 0%, rgba(11, 2, 34, 0.898) 60%);
+    padding: 15px;
+    line-height: 1.2;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ede9ff;
+    min-height: 320px;
+    height: 100%;
+    color: #fff;
+    font-weight: 600
+}
+
+:is(.pfp-swiper-image,.pfp-thumb-image) {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center
+}
+
+:is( .contact-conp-form-input:focus,.contact-conp-form-input:autofill,.contact-conp-form-input:-webkit-autofill )~.contact-conp-form-label {
+    top: -.9rem;
+    font-size: .813rem;
+    color: #000;
+    padding-inline:0.3rem;transition: .3s
+}
+
+#advantages .advantageCarousel::-webkit-scrollbar:horizontal {
+    height: 8px
+}
+
+#advantages .advantageCarousel::-webkit-scrollbar-thumb:window-inactive {
+    background: #1ca8f3
+}
+
+@media screen and (max-width: 576px) {
+    .contact-box li,.contact-box li a {
+        font-size:15px!important
+    }
+}
+
+.check_desc ul li::marker {
+    content: "\2713"
+}
 
 
 .onfooter-premium {
