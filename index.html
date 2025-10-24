@@ -17,6 +17,48 @@
     <title>Galva</title>
 </head>
 <body>
+
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">GALVA Technologies</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="onfooter-form">
+                <textarea name="message" rows="3" placeholder="Опишите, как мы можем помочь"></textarea>
+                <div class="form-row">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="form-row">
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Компания (необязательно)">
+                </div>
+                  <label class="file-label">
+                    <div class="file-icon"></div>
+                    <div class="file-text">
+                        <strong>Прикрепить фото *</strong>
+                        <span>(2–3 шт)</span>
+                    </div>
+                    <input type="file" multiple>
+                </label>
+                <button type="submit" class="onfooter-btn">
+                    Отправить заявку
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" width="22" height="22" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                </form>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    
     <div class="all_sidebar">
     
         <nav id="mobile_navbar" class="">
@@ -37,10 +79,10 @@
             </div>
             <ul class="mobile_list">
                 <li class="mobile_nav_item">
-                    <a href="#service" class="mobile_nav_links ">О компаниие</a>
+                    <a href="#about" class="mobile_nav_links ">О компаниие</a>
                 </li>
                 <li class="mobile_nav_item">
-                    <a href="#coating" class="mobile_nav_links">Виды покрытий</a>
+                    <a href="#service" class="mobile_nav_links">Виды покрытий</a>
                 </li>
                 <li class="mobile_nav_item">
                     <a href="#price" class="mobile_nav_links">Прайс-лист</a>
@@ -56,7 +98,7 @@
 
 
                 <li class="mobile_nav_item">
-                    <button class="mobile_getQuete modalBtn" data-btn="1" type="button">
+                    <button class="mobile_getQuete modalBtn" data-bs-toggle="modal"  data-bs-target="#ModalForm"  data-btn="1" type="button">
                         <span>Оставить заявку</span>
                     </button>
                 </li>
@@ -77,11 +119,11 @@
                 <div class="nav-left">
                     <ul class="nav-center">
                         <li>
-                            <a href="#service">
+                            <a href="#about">
                                 <span>О компаниие</span>
                             </a>
                         </li>
-                        <li><a href="#coating"><span>Виды покрытий</span></a></li>
+                        <li><a href="#service"><span>Виды покрытий</span></a></li>
                         <li>
                             <a href="#price">
                                 <span>Прайс-лист</span>
@@ -115,7 +157,7 @@
                     <div class="subsub">пн-пт:&nbsp;9:00-18:00</div>
                     </div>
                     <div class="callAction">
-                        <button class="modalBtn" data-btn="1">Оставить заявку</button>
+                        <button class="modalBtn" data-bs-toggle="modal"  data-bs-target="#ModalForm" data-btn="1">Оставить заявку</button>
                     </div>
 
 
@@ -149,7 +191,7 @@
             <h1>Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, excepturi?</p>
             <div class="btns">
-                <a href="#" class="btn btn-white">
+                <a href="#" class="btn btn-white" data-bs-toggle="modal"  data-bs-target="#ModalForm" >
                 Оставить заявку
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -172,7 +214,7 @@
             </div>
         </section>
 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="container">
                 <h2 class="about-subtitle">О КОМПАНИИ</h2>
                 <div class="about-content">
@@ -196,7 +238,7 @@
                         поставляемого оборудования. Сотрудничая с нами, вы получаете не только <span class="highlight">высокотехнологичное оборудование</span>, 
                         но и полностью готовый технологический процесс, что снижает операционные риски и упрощает внедрение гальванических систем.
                     </p>
-                    <a href="#" class="about-btn">Подробнее</a>
+                    <a href="#" data-bs-toggle="modal"  data-bs-target="#ModalForm"  class="about-btn">Подробнее</a>
                 </div>
 
 
@@ -473,69 +515,69 @@
 
         <div class="owl-carousel gallery-carousel">
             <div class="item">
-            <a href="img/project1.jpg"  data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project1.jpg"  data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project1.jpg" alt="Image 1">
             </a>
             </div>
             <div class="item">
-            <a href="img/project2.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project2.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project2.jpg" alt="Image 2">
             </a>
             </div>
             <div class="item">
-            <a href="img/project3.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project3.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project3.jpg" alt="Image 3">
             </a>
             </div>
             <div class="item">
-            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project4.jpg" alt="Image 4">
             </a>
             </div>
             <div class="item">
-            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project5.jpg" alt="Image 3">
             </a>
             </div>
             <div class="item">
-            <a href="img/project6.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project6.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project6.jpg" alt="Image 4">
             </a>
             </div>
         <div class="item">
-            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project4.jpg" alt="Image 4">
             </a>
             </div>
             <div class="item">
-            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project5.jpg" alt="Image 3">
             </a>
             </div><div class="item">
-            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project4.jpg" alt="Image 4">
             </a>
             </div>
             <div class="item">
-            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project5.jpg" alt="Image 3">
             </a>
             </div><div class="item">
-            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project4.jpg" alt="Image 4">
             </a>
             </div>
             <div class="item">
-            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project5.jpg" alt="Image 3">
             </a>
             </div><div class="item">
-            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project4.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project4.jpg" alt="Image 4">
             </a>
             </div>
             <div class="item">
-            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="Galvegalery">
+            <a href="img/project5.jpg" data-fancybox="gallery" data-caption="GALVA Technologies">
                 <img src="img/project5.jpg" alt="Image 3">
             </a>
             </div>
@@ -561,6 +603,14 @@
                     <input type="email" placeholder="E-mail">
                     <input type="text" placeholder="Компания (необязательно)">
                 </div>
+                  <label class="file-label">
+                    <div class="file-icon"></div>
+                    <div class="file-text">
+                        <strong>Прикрепить фото *</strong>
+                        <span>(2–3 шт)</span>
+                    </div>
+                    <input type="file" multiple>
+                </label>
                 <button type="submit" class="onfooter-btn">
                     Отправить заявку
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" width="22" height="22" viewBox="0 0 24 24">
@@ -623,8 +673,8 @@
                                     <div class="footer-right-content">
                                         <h4>О компании</h4>
                                         <ul class="footer-right-links">
-                                            <li><a href="#service">О компаниие</a></li>
-                                            <li><a href="#coating">Виды покрытий</a></li>
+                                            <li><a href="#about">О компаниие</a></li>
+                                            <li><a href="#service">Виды покрытий</a></li>
                                             <li><a href="#price">Прайс-лист</a></li>
                                             <!--<li><a href="/servis/">Servis</a></li>-->
                                             <li><a href="#gallery">Галерея</a></li>
